@@ -1,0 +1,37 @@
+/* CSS Transitions and Animations */
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-bottom: 2px solid red;
+    color: black;
+    transition: color 3s ease,font-size 3s ease,border-bottom 1.5s,ease-in-out ;
+}
+nav a:hover{
+    color: green;
+    font-size: 30px;
+    border-bottom: 2px solid yellow;
+}
+
+/* Javascript functions */
+#drink{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+/* CSS and Javascript combination */
+.pic img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.pic.animate{
+    animation: rotate 2s ease-in-out infinite alternate;
+}
+@keyframes rotate{
+    0%{transform: translateX(0) rotate(0deg)}
+    50%{transform: translateX(200px) rotate(180deg)}
+    100%{transform: translateX(0) rotate(360deg)}
+}
